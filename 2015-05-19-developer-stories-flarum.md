@@ -66,7 +66,7 @@ categories:
   <h5>What can you tell us about the future of Flarum?</h5>
    <ul>
         <li>
-          <p>It’s bright! I’m taking a year off from my uni course to work full-time on Flarum, and I've teamed together with the FluxBB developer, Franz Liedke. We're hoping to have a beta out in July, and then build a great ecosystem of extensions. I wrote a <a href="http://tobyzerner.com/flarum" target="_blank">blog post</a> with more detail about what's ahead.</p>
+          <p>It’s bright! I’m taking a year off from my uni course to work full-time on Flarum, and I've teamed together with the developer of <a href="http://fluxbb.org" target="_blank">FluxBB</a>, Franz Liedke. We're hoping to have a beta out in July, and then build a great ecosystem of extensions. I wrote a <a href="http://tobyzerner.com/flarum" target="_blank">blog post</a> with more detail about what's ahead.</p>
         </li>
     </ul>
 </p>
