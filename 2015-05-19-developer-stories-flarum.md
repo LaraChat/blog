@@ -36,7 +36,7 @@ categories:
         <li>
           <p><a href="http://flarum.org" target="_blank">Flarum</a> is modern forum software, powered by Laravel. The goal is to make it simple and extensible, so any average Joe can set up a discussion forum for their website/team/company/class, and then scale it and customise it really easily. It's fast, has a beautiful UI, and it's being built from the ground up with an open API. Developers will be able to create and sell “extensions” which let forum admins add community-specific features (things like user rankings, polls, Q&A, themes), without making the core software clunky and bloated.</p>
           
-          <p>Flarum is <a href="http://github.com/flarum/core" target="_blank">open-source</a> under the MIT license and there’s an early-stage live demo which you can check out at <a href="http://demo.flarum.org" target="_blank">http://demo.flarum.org</a>.</p>
+          <p>Flarum is <a href="http://github.com/flarum/core" target="_blank">open-source</a> under the MIT license and there’s an early-stage live demo which you can check out at <a href="http://demo.flarum.org" target="_blank">demo.flarum.org</a>.</p>
         </li>
     </ul>
 </p>
@@ -56,7 +56,7 @@ categories:
   <h5>What was the hardest part of developing Flarum?</h5>
    <ul>
         <li>
-          <p>1. Finding the right JavaScript framework. I had never had any experience with JavaScript frameworks until I dove into Ember. Ember seemed like a good choice for Flarum, and through a steep learning curve I was able to build a fully-functional front-end for Flarum. But eventually we ran into <a href="http://discuss.flarum.org/139-introducing-flarum-s-fast-new-front-end/p1#p347" target="_blank">some problems</a> with Ember and <a href="http://tobyzerner.com/mithril" target="_blank">started over</a> with a much more lightweight framework called Mithril. It set us back a few weeks but I definitely think it was a good decision!</p>
+          <p>1. Finding the right JavaScript framework. I had never had any experience with JavaScript frameworks until I dove into Ember. Ember seemed like a good choice for Flarum, and through a steep learning curve I was able to build a fully-functional front-end for Flarum. But eventually we ran into <a href="http://discuss.flarum.org/139-introducing-flarum-s-fast-new-front-end/p1#p347" target="_blank">some problems</a> with Ember and <a href="http://tobyzerner.com/mithril" target="_blank">started over</a> with a much more lightweight framework called Mithril. It set us back a few weeks but I definitely think it was a good decision.</p>
           <p>2. Finding the right compromise between the Active Record and Repository patterns. I’ve struggled with this for so long, and I still am somewhat. I love the theory behind the Repository pattern (separating the persistence layer), but I hate the idea of losing Eloquent’s magical goodness. With Flarum, there’s also the consideration of making things easy enough for potential extension authors who don’t necessarily want to spend hours crafting a rock solid domain layer. So in the end, I’ve opted to use “repositories” purely as classes that encapsulate data fetching queries (for testability), and use Active Record everywhere else.</p>
         </li>
     </ul>
@@ -75,7 +75,7 @@ categories:
   <h5>What is the best Twitter account to follow and why is it @LaraChatSlack?</h5>
    <ul>
         <li>
-          <p><a href="http://twitter.com/LaraChatSlack" target="_blank">@LaraChatSlack</a> is definitely *the best* Twitter account to follow. It will change your perspective on life and make you an overall better person. By some unexplainable quantum phenomenon, <a href="http://twitter.com/Flarum" target="_blank">@Flarum</a> is also definitely *the best* Twitter account to follow. It has similar magical properties which scientists have thus far been unable to explain.</p>
+          <p><a href="http://twitter.com/LaraChatSlack" target="_blank">@LaraChatSlack</a> is definitely <em>the best</em> Twitter account to follow. It will change your perspective on life and make you an overall better person. By some unexplainable quantum phenomenon, <a href="http://twitter.com/Flarum" target="_blank">@Flarum</a> is also definitely <em>the best</em> Twitter account to follow. It has similar magical properties which scientists have thus far been unable to explain.</p>
         </li>
     </ul>
 </p>
