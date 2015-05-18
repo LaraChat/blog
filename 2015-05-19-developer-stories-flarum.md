@@ -16,7 +16,7 @@ categories:
         <li>
             <p>I’m a 22-year-old medical student doing web development on the side. My brother taught me PHP at a young age as we worked on a bunch of projects together — video game fan-sites, forums, client work. Since then I’ve kept up a healthy interest in web dev and forum software.</p>
         
-            <p>I discovered Laravel in its infancy (version 2) years ago and immediately fell in love. It’s been one of my favourite tools since, and I’ve enjoyed being able to watch it grow and learn about good software design from it. More recently I dived into front-end JavaScript frameworks like <a href="http://emberjs.com" target="_blank">Ember.js</a> and <a href="http://mithril.js.org" target="_blank">Mithril</a>, and I think I love them even more! They make it incredibly easy to create amazing user experiences, a process which I find very rewarding.</p>
+            <p>I discovered Laravel in its infancy (version 2) years ago and immediately fell in love. It’s been one of my favourite tools since, and I’ve enjoyed being able to watch it grow and learn about good software design from it. More recently I dove into front-end JavaScript frameworks like <a href="http://emberjs.com" target="_blank">Ember.js</a> and <a href="http://mithril.js.org" target="_blank">Mithril</a>, and I think I love them even more! They make it incredibly easy to create amazing user experiences, a process which I find very rewarding.</p>
         </li>
     </ul>
 </p>
