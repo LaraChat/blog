@@ -3,7 +3,7 @@ title: Developer Stories - Toby Zerner (Flarum)
 categories:
   - Stories
 ---
-<img src="https://pbs.twimg.com/profile_images/596302747235799040/ARPWrCfi_400x400.jpg" />
+<!-- Broken img src="https://pbs.twimg.com/profile_images/596302747235799040/ARPWrCfi_400x400.jpg" /-->
 <p>
     [=What makes the Laravel community so great is the people. In an ongoing series of blog posts we will be talking about some of the fantastic products the people are creating.
 </p>
