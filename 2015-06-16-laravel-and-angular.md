@@ -3,17 +3,15 @@ title: Laravel Backend with or without Angular.JS Front End
 categories:
   - Tutorials
 ---
-<h3>Laravel Backend with or without Angular.JS Front End</h3>
+<p>[=I was initially hesitant to post this little tutorial as it's kind of outdated but folks in LaraChat keep asking me about using Angular and Laravel together so here it is for everyone! Do keep in mind that this was written last year before Laravel 5 was released and is out of date. The syntax can easily be modernized. Note: blade syntax has changed from <code>{{ }}</code> to <code>{!! !!}</code> with Laravel 5 and no longer needs to be escaped.=]</p>  
 
-<p>I was initially hesitant to post this little tutorial as it's kind of outdated but folks in LaraChat keep asking me about using Angular and Laravel together so here it is for everyone! Do keep in mind that this was written last year before Laravel 5 was released and is out of date. The syntax can easily be modernized. Note: blade syntax has changed from <code>{{ }}</code> to <code>{!! !!}</code> and no longer needs to be escaped.</p>
-
-<p>There are not many set practices regarding model validation and Laravel so we will have to roll our own. I think that validation should be handled by the model in order to adhere to the ideals of the MVC architecture that Laravel uses. </p>
+<p>There are not many set practices regarding model validation and Laravel so we will have to roll our own. I think that validation should be handled by the model in order to adhere to the ideals of the MVC architecture that Laravel uses.</p>
 
 <p>Putting a private array in the model class containing validation rules and creating an isValid method is one handy way to do this. As an example here is a simple model for a blog post.</p>
 
 <i>Example of Simple Model with Validation</i>
 
-<pre><code>
+<pre>
 class Posts extends Eloquent {
     // Table that this Post data model reads from and writes to
     protected   $table = 'Posts';
@@ -47,12 +45,12 @@ class Posts extends Eloquent {
         return false;
     }
 }
-</pre></code>
+</pre>
 
 <p>With the model setup as such it is easy to perform validation from the controller for a view response or for an API. As an example for both I will use the store method which is called with a post request to make a new Post record.
 Controller Validation for View Responses</p>
 
-<pre><code>
+<pre>
 /**
  * Stores a newly created post from the create form.
  * @return Response
@@ -72,12 +70,12 @@ public function store()
     // Show the newly created blog post
     return View::make('blog.show', array('post'=>$this->post));
 }
-</pre></code>
+</pre>
 
 <i>Validating in the Controller for JSON API Responses</i>
 
 
-<pre><code>
+<pre>
 /**
  * Store a newly created resource in storage.
  *
@@ -100,7 +98,7 @@ public function store()
     // Return a redirect url as JSON (Or the new blog post if you wish) with status 201 Resource Created
     return Response::json(array('redirectUrl'=>'/blog/'.$this->post->slug), 201);
 }
-</pre></code>
+</pre>
 
 <p>Responding to the JSON API response with Angular.JS is quite simple. If you try to post to the first example from Angular.js the Post will be created but not much else will happen because a fully rendered view is not useful to Angular.JS.</p>
 
@@ -109,7 +107,7 @@ public function store()
 <i>Responding to the API Response from an Angular.JS Controller</i>
 
 
-<pre><code>
+<pre>
 app.controller('CreatePostController', ['$http', '$window', function($http, $window) {
     var self = this;
     // Initialize a controller property to hold the post
@@ -131,13 +129,13 @@ app.controller('CreatePostController', ['$http', '$window', function($http, $win
         });
     };
 } ]);
-</pre></code>
+</pre>
 
-<p>Note that this is a blade view, so in order for Angular.JS' <code>{{ }}</code> to render they need to be escaped with <code>@{{ }}<code></p>
+<p>Note that this is a blade view, so in order for Angular.JS' <code>{{ }}</code> to render they need to be escaped with <code>@{{ }}</code></p>
 
 <i>The Angular View for Creating a Post</i>
 
-<pre><code>&lt;form name="postForm"&gt;
+<pre>&lt;form name="postForm"&gt;
    &lt;div&gt;
        &lt;label for="post-title"&gt;Title:&lt;/label&gt;
        &lt;input id="post-title" ng-model="create.post.title" /&gt;
@@ -166,4 +164,4 @@ app.controller('CreatePostController', ['$http', '$window', function($http, $win
         &lt;div ng-bind-html="create.post.content | trusted"&gt;&lt;/div&gt;
     &lt;/blockquote&gt;
 &lt;/form&gt;
-</pre></code>
+</pre>
